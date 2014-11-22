@@ -58,24 +58,28 @@ define ( 'IMAGES', THEMEROOT . '/images' );
 				echo the_author_meta('description');
 				echo '</p>';			
 			}
-			if( !empty(get_field( 'post_friend' ) ) ) {
-				$friend = get_field( 'post_friend' );
-				echo '<p>';
-				echo $friend;
-				echo '</p>';	
-			}
-			if( !empty(get_field( 'post_enemy' ) ) ) {
-				$enemy = get_field( 'post_enemy' );
-				echo '<p>';
-				echo $enemy;
-				echo '</p>';	
-			}
+			if( function_exists( 'get_field' ) ) {
+				if( !empty(get_field( 'post_friend' ) ) ) {
+					$friend = get_field( 'post_friend' );
+					echo '<p>';
+					echo $friend;
+					echo '</p>';	
+				}
+				if( !empty(get_field( 'post_enemy' ) ) ) {
+					$enemy = get_field( 'post_enemy' );
+					echo '<p>';
+					echo $enemy;
+					echo '</p>';	
+				}
 
-			if( !empty(get_field( 'post_date' ) ) ) {
-				$date = get_field( 'post_date' );
-				echo '<p>';
-				echo $date;
-				echo '</p>';	
+				if( !empty(get_field( 'post_date' ) ) ) {
+					$date = get_field( 'post_date' );
+					echo '<p>';
+					echo $date;
+					echo '</p>';	
+				}
+			} else {
+				echo 'Please Install Advanced Custom Field Plugin';
 			}
 		?>
 	</footer>
