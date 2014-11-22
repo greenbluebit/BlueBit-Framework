@@ -1,0 +1,40 @@
+/**
+* ------------------------------------------
+* Login content styles
+* ------------------------------------------
+*/
+/* line 7, ../../sass/layout/login.scss */
+.login-desc {
+  line-height: 45px;
+  padding-left: 5px;
+}
+
+/* line 13, ../../sass/layout/login.scss */
+.login-logo {
+  display: inline-block;
+  padding-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 23, ../../sass/layout/login.scss */
+.container-login {
+  max-width: 550px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 280px;
+  border: 1px solid grey;
+}
+
+/* line 32, ../../sass/layout/login.scss */
+.error-login {
+  padding-top: 5px;
+  width: auto;
+}
+
+/* line 37, ../../sass/layout/login.scss */
+.login-content {
+  padding-left: 5px;
+  padding-right: 5px;
+}

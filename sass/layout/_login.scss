@@ -1,0 +1,67 @@
+/**
+* ------------------------------------------
+* Login content styles
+* ------------------------------------------
+*/
+
+.login-desc {
+	line-height: 45px;
+	padding-left: 5px;
+
+}
+
+.login-logo {
+
+	img {
+				@extend .img-responsive;
+				margin-left: auto;
+				margin-right: auto;
+				border: 1px solid black;
+		}
+				
+				display: inline-block;
+				padding-top:5px;
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+
+}
+
+.container-login {
+	max-width: 550px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 280px;
+	border: 1px solid grey;
+}
+
+.error-login {
+	padding-top: 5px;
+	width: auto;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.login-msg {
+	height: 35px;
+	text-align: center;
+	padding-top: 5;
+	line-height: 25px;
+	background-color: rgb(152, 33, 37);
+	color: white;
+}
+
+.login-content {
+	padding-left: 5px;
+	padding-right: 5px;	
+}
+
+.login-remember label {
+	width: 115px;
+}
+.login-remember #rememberme {
+	float: left;
+	width:15px;
+	height:inherit;
+}
